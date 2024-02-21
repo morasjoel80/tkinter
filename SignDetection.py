@@ -23,8 +23,8 @@ L1.pack()
 
 #   OpenCV
 
-MODEL_PATH = "Model/keras_model.h5"
-LABEL_PATH = "Model/labels.txt"
+MODEL_PATH = "Model/Old Models/keras_model4.h5"
+LABEL_PATH = "Model/Old Models/labels4.txt"
 SPEECH_PATH = "speech"
 cap = None
 detector = HandDetector(maxHands=2, detectionCon=0.8)
@@ -47,7 +47,7 @@ folder.close()
 # Init text to speech
 def on_cam():
     global cam_on, cap
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
     cam_on = True
 
 def off_cam():
